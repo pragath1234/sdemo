@@ -15,7 +15,7 @@ import sys
 def home(request):
     return render(request, 'index.html')
 
-@login_required
+#@login_required
 def upload(request):
     if request.method == 'POST':
         person_resource = PersonResource()
